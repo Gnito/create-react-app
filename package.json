@@ -6,14 +6,16 @@
     "react-scripts": "3.0.1"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev-server": "export PORT=4000&&yarn run build&&node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
